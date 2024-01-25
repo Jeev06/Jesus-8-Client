@@ -8,6 +8,9 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SidePanelComponent } from './components/side-panel/side-panel.component';
 import { PageLoaderComponent } from './components/page-loader/page-loader.component';
+import { TestpageComponent } from './components/testpage/testpage.component';
+import { CartpageComponent } from './components/cartpage/cartpage.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 @NgModule({
@@ -16,13 +19,16 @@ import { PageLoaderComponent } from './components/page-loader/page-loader.compon
     HeaderComponent,
     FooterComponent,
     SidePanelComponent,
-    PageLoaderComponent
+    PageLoaderComponent,
+    TestpageComponent,
+    CartpageComponent
   ],
   imports: [
     CommonModule,
     LayoutsRoutingModule,
     NgbDropdownModule,
-    NgbDropdown
+    NgbDropdown,
+    SharedModule
   ]
 })
 export class LayoutsModule { }
